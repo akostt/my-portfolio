@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Получение репозитория
+        uses: actions/checkout@v4
+
+      - name: Приветствие
+        run: |
+          echo "Привет от GitHub Actions!"
+          echo "Коммит: $GITHUB_SHA"
+          echo "Автор: $GITHUB_ACTOR"
+
+      - name: Проверка файлов
+        run: |
+          echo "Файлы в репозитории:"
+          ls -la
+          echo "Проверка завершена"
