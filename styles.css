@@ -185,9 +185,37 @@ h2 {
   font-weight: 600;
 }
 
+.contacts {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: baseline;
+  padding: 14px 18px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.contacts span {
+  width: 72px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.contacts a {
+  font-weight: 600;
+}
+
 .footer {
-  max-width: 960px;
-  margin: 0 auto;
+  max-width: 960px;  margin: 0 auto;
   padding: 32px 24px 48px;
   border-top: 1px solid var(--border);
   color: var(--muted);
