@@ -23,3 +23,11 @@ python3 -m http.server 8000
 ```
 
 После запуска страница доступна по адресу <http://localhost:8000>.
+
+## Структура проекта
+
+- `.github/workflows/ci.yml` — workflow проверки при push;
+- `.github/ISSUE_TEMPLATE/` — шаблоны задач;
+- `.github/dependabot.yml` — обновление зависимостей;
+- `index.html`, `styles.css` — статический сайт;
+- `SECURITY.md` — политика безопасности.
